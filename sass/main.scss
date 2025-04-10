@@ -1,9 +1,4 @@
-//have to include all of these otherwise main.css will be empty
-//We do not create styles in here
-//@use means we are using the files in this file
-//@forward means we are forwarding or passing along the file
-
-@use "abstracts";
-@use "base";
-@use "components";
-@use "pages";
+@use 'abstracts';
+@use 'base';
+@use 'components';
+@use 'pages';

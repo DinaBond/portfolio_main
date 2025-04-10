@@ -1,0 +1,39 @@
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 43px 0px 18px 0px;
+    padding: 25px 8px 20px 8px;
+    align-items: flex-end;
+    /* Add blur effect */
+filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+backdrop-filter: blur(10px); /* Adjust blur intensity */
+}
+
+.contact-links div{
+padding-top: 16px;
+}
+
+.back-to-top {
+display: flex;
+align-items: flex-end;
+}
+
+.back-to-top img {
+width: 14px;
+margin-left: 8px;
+}
+
+.back-to-top p{
+white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}

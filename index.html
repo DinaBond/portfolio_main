@@ -1,9 +1,225 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dina Bond Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+          <div class="logo-container">
+            <div class="logo-text">
+              <div >DINA BOND</div>
+              <div >DESIGN</div>
+            </div>
+            <div class="logo">
+              <img src="images/logo.svg" alt="DD Logo">
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+          </ul>
+          <div class="resume-button">
+            <a href="#" class="resume-link">RESUME</a>
+          </div>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+      <div class="resume-button">
+        <a href="#" class="resume-link">RESUME</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text-container">
+            <h1 class="hero-title">
+              <span class="turn-your">TURN YOUR</span>
+              <div class="ideas-container">
+                <span class="ideas-text">IDEAS</span>
+                <div class="ideas-line"></div>
+              </div>
+              <span class="into">INTO</span>
+              <span class="design-text">DESIGN</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Section -->
+      <section id="explore" class="explore-section">
+        <h2 class="section-title">Explore</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Initially only one card is visible, clicking expands to show all -->
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">what kind of work ux/branding</p>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">web design</p>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">illustration</p>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">motion graphics</p>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">ux/branding</p>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-icons">
+              <div class="project-icon"></div>
+              <div class="project-icon"></div>
+            </div>
+            <h3 class="project-name">name</h3>
+            <p class="project-type">web design</p>
+          </div>
+        </div>
+        <div class="pagination">1/6</div>
+      </section>
+
+      <!-- Watch Section -->
+      <section class="watch-section">
+        <h2 class="section-title">Watch</h2>
+        <div class="video-container">
+          <video class="video-element" poster="public/lovable-uploads/c65a433b-2bf3-4aa4-8cd4-64c9fc1e0b68.png">
+            <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="play-button" aria-label="Play video">
+            <div class="play-triangle"></div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Meet Section -->
+      <section id="about" class="meet-section">
+        <h2 class="section-title">Meet</h2>
+        <div class="meet-content">
+          <div class="meet-text">
+            <p>Hi, I'm Dina Bond — a web designer and graduate of the Interactive Media Design program at Fanshawe College. I have 2 years of experience creating visuals, including images, covers, cards for social media, websites, and various things that you can see online.</p>
+            <p>In my free time, I enjoy watching movies, hiking, and making collages — a mix of getting lost in nature, lost in stories, and sometimes just lost in a pile of paper and glue.</p>
+          </div>
+          <div class="meet-image-container">
+            <div class="image-border"></div>
+            <img src="images/pfp.png" alt="Dina Bond portrait" class="meet-image">
+            <div class="image-accent"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <div class="contact-heading">
+          <h3>Caught the BOND to my style?</h3>
+          <p>Share your ideas — let's bring your design to life!</p>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send a Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="DD Logo">
+          </div>
+          <div class="footer-info">
+            <p>Dina Bond - Delegate the design to me</p>
+            <p>and focus on what matters.</p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-location">
+            <p>Based in London,</p>
+            <p>ON Canada</p>
+          </div>
+          <div class="social-icons">
+            <div class="social-icon"></div>
+            <div class="social-icon"></div>
+            <div class="social-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

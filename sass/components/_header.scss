@@ -1,0 +1,235 @@
+
+
+/* Header -NAV */
+
+header{
+    padding: 15px !important;
+    margin: 0;
+    /* background: url(../images/MOBILESection1-top-BG.png) no-repeat; */
+    background-size: cover; /* or 'contain', or specific size like '100%' */
+    background-position: calc(100% - 30px) 40px; 
+
+}
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    background-color: transparent;
+    position: absolute;
+    /* gap: 39vh; */
+    left: 0;
+    right: 0;
+}
+
+
+#logo {
+    width: 50px; 
+    margin-left: 10px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 46px;
+    height: 30px;
+    z-index: 2;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform .4s ease-in-out;
+    position: absolute;
+    right: 4%;
+}
+
+.hamburger .bar {
+    height: 6px;
+    width: 104%;
+    background: linear-gradient(45deg,#DBC1FE, #181890);
+    border-radius: 5px;
+    
+    
+}
+
+.hamburger.active  {
+    filter: drop-shadow(2px 0 10px rgba(219, 193, 254, 10.6));
+    transform:  rotate(180deg);
+    /* transform:  rotate(360deg); */
+    /* transition: transform 2s ease; */
+}
+
+.hamburger.active .bar {
+    background: linear-gradient(45deg, #000000, #333C45, #000000);
+}
+
+/* .hamburger.active div{
+    left: 0;
+    top: -39vh;
+    opacity: 1;
+    visibility: visible;
+} */
+/* .hamburger .bar:nth-child(1){
+    background: linear-gradient(#DBC1FE, #9A88D9);
+}
+.hamburger .bar:nth-child(2){
+    background: linear-gradient(#9A88D9, #544CB2);
+}
+
+.hamburger .bar:nth-child(3) {
+    background: linear-gradient(#544CB2, #181890);
+} */
+
+
+
+
+
+/* .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+} */
+
+.nav-menu {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    right: 6%;
+    /* left: 0; */
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(#000000, #333C45, #000000);
+    filter: drop-shadow(-5px 0 10px rgba(219, 193, 254, 10.6));
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    
+}
+
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-menu.active {
+    right: 6%;
+    /* left: 54.4vh; */
+    top: 100px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-menu .nav-item:last-child {
+    margin-top: 10vh;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+
+.nav-item a {
+        background: transparent;
+        
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+}
+
+.nav-item a img:hover {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 10px rgba(219, 193, 254, 0.6)) 
+           
+}
+
+
+@media screen and (min-width: 768px) {
+    .mobile-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 20px;
+        background-color: transparent;
+        position: absolute;
+        /* gap: 39vh; */
+        left: 0;
+        right: 0;
+    }
+    
+    
+    #logo {
+        width: 50px; 
+        margin-left: 10px;
+    }
+    
+    .hamburger, .nav-menu {
+        display: none;
+        
+    }
+
+    .nav-menu {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 50px;
+        position: absolute;
+        top: 100px;
+        left: -25px;
+        opacity: 1;
+        visibility: visible;
+        background: linear-gradient(#000000, #333C45, #000000);
+        filter: drop-shadow(-5px 0 10px rgba(219, 193, 254, 10.6));
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        
+    }
+
+    #button-tablet {
+        transform: rotate(90deg);
+        transition: transform 0.4s ease;
+    }
+
+    .nav-menu.active-tablet {
+        left: 10px;
+    }
+
+    #button-tablet.expanded {
+        transform: rotate(0deg);
+    }
+     
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 20px;
+        background-color: transparent;
+        position: absolute;
+        /* gap: 39vh; */
+        left: 0;
+        right: 0;
+    }
+    
+    
+    #logo {
+        width: 50px; 
+        margin-left: 10px;
+    }
+    
+    .hamburger {
+        display: none;
+        
+    }
+}
